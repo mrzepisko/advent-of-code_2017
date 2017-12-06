@@ -1,19 +1,12 @@
-﻿////////////////////////////////////////////////////////////////////////////////////////////////////////
-//FileName: DBOperations.cs
-//FileType: Visual C# Source file
-//Size : 26206
-//Author : Your Name
-//Created On : 7/8/2015 9:56:39 AM
-//Last Modified On : 8/9/2015 11:53:23 AM
-//Copy Rights : your company
-//Description : Class for defining database related functions
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace AdventOfCode {
+    /// <summary>
+    /// Advent of Code 2017 - Day 6: Memory Reallocation ---
+    /// </summary>
     public class Day6 {
       static int[] blocks;
       public static void Run() {
