@@ -8,10 +8,10 @@ namespace AdventOfCode {
     /// Advent of Code 2017 - Day 6: Memory Reallocation ---
     /// </summary>
     public class Day6 {
-      static int[] blocks;
+        static int[] blocks;
       public static void Run() {
             string input0 = "0	2	7	0";
-            string input1 = "0	5	10	0	11	14	13	4	11	8	8	7	1	4	12	11";
+            string input1 = Advent.DATA6;
 
             Console.WriteLine("\n\tExample data:");
             Console.WriteLine("\t" + Step(input0));
