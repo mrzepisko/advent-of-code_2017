@@ -7,9 +7,12 @@ namespace AdventOfCode {
     /// <summary>
     /// Advent of Code 2017 - Day 6: Memory Reallocation ---
     /// </summary>
-    public class Day6 {
-        static int[] blocks;
-      public static void Run() {
+    public class Day6 : IDay {
+        int[] blocks;
+
+        public string Name => "--- Day 6: Memory Reallocation ---";
+
+        void Run() {
             string input0 = "0	2	7	0";
             string input1 = Advent.DATA6;
 
@@ -19,12 +22,12 @@ namespace AdventOfCode {
             Console.WriteLine("\t" + Step(input1));
         }
 
-        static Result Step(string input) {
+        Result Step(string input) {
             InitMemory(input);
             return CheckLoop();
         }
 
-        static void InitMemory(string s) {
+        void InitMemory(string s) {
             string[] split = s.Split('\t');
             if (blocks == null) {
                 blocks = new int[split.Length];
@@ -39,12 +42,12 @@ namespace AdventOfCode {
             }
         }
 
-        static Result CheckLoop() {
+        Result CheckLoop() {
             List<string> steps = new List<string> {
                 IntArrayToString(blocks)
             };
             int count = 0;
-            for (;;) {
+            for (; ; ) {
                 count++;
                 Cycle();
                 string result = IntArrayToString(blocks);
@@ -55,9 +58,9 @@ namespace AdventOfCode {
                 steps.Add(result);
             }
         }
-        
 
-        static void Cycle() {
+
+        void Cycle() {
             int max = blocks.Max();
             int maxIndex = Array.IndexOf(blocks, max);
 
@@ -74,13 +77,17 @@ namespace AdventOfCode {
             }
         }
 
-        static string IntArrayToString(int[] arr) {
+        string IntArrayToString(int[] arr) {
             StringBuilder sb = new StringBuilder();
             sb.Append(arr[0]);
             for (int i = 1; i < arr.Length; i++) {
                 sb.Append("\t").Append(arr[i]);
             }
             return sb.ToString();
+        }
+
+        public void Print() {
+            Run();
         }
 
         struct Result {

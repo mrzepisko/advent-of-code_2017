@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Advent.cs" />
+    <Compile Include="Day3.cs" />
     <Compile Include="Day1.cs" />
+    <Compile Include="Day2.cs" />
     <Compile Include="Day6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,12 +8,8 @@ namespace AdventOfCode {
     /// <summary>
     /// --- Day 1: Inverse Captcha ---
     /// </summary>
-    public class Day1 {
-
-        public static void Run() {
-            PartOne();
-            PartTwo();
-        }
+    public class Day1 : IDay {
+        public string Name => "--- Day 1: Inverse Captcha ---";
 
         static void PartOne() {
             Console.WriteLine("\t-- Part one --");
@@ -55,6 +51,11 @@ namespace AdventOfCode {
                 }
             }
             return result;
+        }
+
+        public void Print() {
+            PartOne();
+            PartTwo();
         }
     }
 }
