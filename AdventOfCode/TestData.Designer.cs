@@ -115,7 +115,7 @@ namespace AdventOfCode {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to 0 2 2 -2 -2 -2 1 2 2 -1 -4 -8 -7 -11 0 -13 -8 -7 -13 -11 -15 -4 -10 -10 -22 -22 -1 -9 1 2 -23 -4 -31 -3 2 -34 -28 -28 -16 -1 -34 -13 -25 1 -14 -40 -11 -32 -25 -17 -43 -23 -3 -52 -31 -8 -15 -48 -13 -56 -37 -24 -25 -47 -38 0 -35 -65 -63 -40 -18 -55 -11 -8 -18 -53 -39 -20 0 -6 -75 -22 -36 -71 -61 -74 -11 -14 -35 -54 -41 -59 -51 -45 -62 -53 -8 -26 -22 -16 -66 -87 -11 -59 -9 -44 -73 -76 -3 -78 -4 -45 -10 -38 -20 -102 -114 -44 -21 -111 -118 0 -80 -65 -28 -51 -95 -42 -31 -41 -98 -39 -89 -116 -115 -30 -68 -52 -21 - [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DATA5 {
             get {
@@ -129,6 +129,18 @@ namespace AdventOfCode {
         internal static string DATA6 {
             get {
                 return ResourceManager.GetString("DATA6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to --- Advent of Code 2017
+        ///	http://adventofcode.com/2017
+        ///	author: @mrzepisko
+        ///	https://github.com/rzmarcin/advent-of-code_2017.
+        /// </summary>
+        internal static string INTRO_TEXT {
+            get {
+                return ResourceManager.GetString("INTRO_TEXT", resourceCulture);
             }
         }
     }
