@@ -20,7 +20,7 @@ namespace AdventOfCode {
                 Console.WriteLine(string.Format("Example data: {1}; Distance: {0}", FindDistance(i), i));
             }
 
-            Console.WriteLine(string.Format("Test data: {0}; Distance: {1}", Advent.DATA3, FindDistance(int.Parse(Advent.DATA3))));
+            Console.WriteLine(string.Format("Test data: {0}; Distance: {1}", TestData.DATA3, FindDistance(int.Parse(TestData.DATA3))));
         }
 
         /// <summary>

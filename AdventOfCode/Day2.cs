@@ -11,12 +11,12 @@ namespace AdventOfCode {
             string example = "5\t1\t9\t5\n7\t5\t3\n2\t4\t6\t8";
             Console.WriteLine("-- Part one --");
             Console.WriteLine(string.Format("\tExample data checksum: {0}", CalculateChecksum(example).regular));
-            Console.WriteLine(string.Format("\tTest data checksum: {0}", CalculateChecksum(Advent.DATA2).regular));
+            Console.WriteLine(string.Format("\tTest data checksum: {0}", CalculateChecksum(TestData.DATA2).regular));
 
             string example2 = "5\t9\t2\t8\n9\t4\t7\t3\n3\t8\t6\t5";
             Console.WriteLine("-- Part two --");
             Console.WriteLine(string.Format("\tExample data checksum: {0}", CalculateChecksum(example2).divisible));
-            Console.WriteLine(string.Format("\tTest data checksum: {0}", CalculateChecksum(Advent.DATA2).divisible));
+            Console.WriteLine(string.Format("\tTest data checksum: {0}", CalculateChecksum(TestData.DATA2).divisible));
         }
 
         Result CalculateChecksum(string input) {

@@ -19,7 +19,7 @@ namespace AdventOfCode {
                 Console.WriteLine(string.Format("\tExample data: {0}; result: {1}", input, InverseCaptcha(input)));
             }
 
-            Console.WriteLine(string.Format("\n\tTest data: {0}...; result: {1}", Advent.DATA1.Substring(0, 5), InverseCaptcha(Advent.DATA1)));
+            Console.WriteLine(string.Format("\n\tTest data: {0}...; result: {1}", TestData.DATA1.Substring(0, 5), InverseCaptcha(TestData.DATA1)));
         }
 
         public static int InverseCaptcha(string input) {
@@ -41,7 +41,7 @@ namespace AdventOfCode {
                 Console.WriteLine(string.Format("\tExample data: {0}; result: {1}", input, InverseCaptchaPartTwo(input)));
             }
 
-            Console.WriteLine(string.Format("\n\tTest data: {0}...; result: {1}", Advent.DATA1.Substring(0, 5), InverseCaptchaPartTwo(Advent.DATA1)));
+            Console.WriteLine(string.Format("\n\tTest data: {0}...; result: {1}", TestData.DATA1.Substring(0, 5), InverseCaptchaPartTwo(TestData.DATA1)));
         }
         public static int InverseCaptchaPartTwo(string input) {
             int result = 0;

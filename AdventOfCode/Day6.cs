@@ -14,7 +14,7 @@ namespace AdventOfCode {
 
         void Run() {
             string input0 = "0	2	7	0";
-            string input1 = Advent.DATA6;
+            string input1 = TestData.DATA6;
 
             Console.WriteLine("\n\tExample data:");
             Console.WriteLine("\t" + Step(input0));
