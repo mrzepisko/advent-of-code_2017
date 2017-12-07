@@ -133,6 +133,42 @@ namespace AdventOfCode {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to nzyiue (57)
+        ///pdmkag (39)
+        ///bogbg (13)
+        ///nubay (45)
+        ///dukzh (17)
+        ///kpjxln (44) -&gt; dzzbvkv, gzdxgvj, wsocb, jidxg
+        ///cxjyxl (83)
+        ///vusplt (151) -&gt; mcfst, orrwx
+        ///mxrfq (98)
+        ///bdoez (62)
+        ///vrajpg (78)
+        ///qzsowpu (90)
+        ///nrxoha (51)
+        ///xtjrkv (351) -&gt; jlbhafs, pyocxtt
+        ///rlnii (18986) -&gt; xjosf, ljvpv, wkumzkr
+        ///ddrrgp (23)
+        ///wladmn (42)
+        ///ryskzh (209) -&gt; wsyya, xbqpjo
+        ///jbjkp (34)
+        ///fnfiur (86)
+        ///zxzkl (82)
+        ///hbmxey (1869) -&gt; khkuxc, mjuwde, tztycfl, miauii
+        ///zjyqcfa (97)
+        ///zbtck (48)
+        ///mgsasl (39)
+        ///cemygp (34)
+        ///iolrkmv (139) -&gt; rntjx, itxtmhb
+        ///jzmqzl (1446) -&gt; ppt [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DATA7 {
+            get {
+                return ResourceManager.GetString("DATA7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to --- Advent of Code 2017
         ///	http://adventofcode.com/2017
         ///	author: @mrzepisko
