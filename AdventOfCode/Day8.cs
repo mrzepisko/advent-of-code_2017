@@ -13,7 +13,7 @@ namespace AdventOfCode {
 
             Box box = ProcessInput(TestData.DATA8);
             box.ProcessCommands();
-            Console.WriteLine(string.Format("Processed {0} commands, the highest register value is {1}", box.commands.Count, box.registers.Values.Max()));
+            Console.WriteLine(string.Format("Processed {0} commands, the highest register value is {1}, max value was {2}", box.commands.Count, box.registers.Values.Max(), box.max));
         }
 
         Box ProcessInput(string input) {
@@ -46,12 +46,13 @@ namespace AdventOfCode {
             Run();
         }
         class Box {
+            public int max = int.MinValue;
             public Dictionary<string, int> registers = new Dictionary<string, int>();
             public List<Command> commands = new List<Command>();
 
             public void ProcessCommands() {
                 foreach (Command cmd in commands) {
-                    cmd.Execute(registers);
+                    max = Math.Max(max, cmd.Execute(registers));
                 }
             }
         }
@@ -92,10 +93,11 @@ namespace AdventOfCode {
                 }
             }
 
-            public void Execute(Dictionary<string, int> registers) {
+            public int Execute(Dictionary<string, int> registers) {
                 if (CheckIf(check, registers[target], checkValue)) {
                     registers[source] += addValue;
                 }
+                return registers[source];
             }
         }
     }
