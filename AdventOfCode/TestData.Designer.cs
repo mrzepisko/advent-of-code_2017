@@ -169,6 +169,36 @@ namespace AdventOfCode {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to sdj dec 558 if r &lt;= 8
+        ///cpv inc 669 if csu &gt;= -6
+        ///ke dec 312 if pep != 0
+        ///sdj inc -97 if bs == 0
+        ///nj inc -593 if hp &lt; 1
+        ///rcb inc -121 if t != 0
+        ///moe inc -437 if vt &gt; -7
+        ///n dec 865 if t == 0
+        ///dtf dec 137 if u != 1
+        ///cpv inc -625 if ke == 0
+        ///zx inc 410 if nwg &lt; 8
+        ///hp dec -263 if nj &gt;= -585
+        ///ib dec 335 if ifd &gt; -8
+        ///pmp inc -432 if sdj &lt;= -648
+        ///vt inc 612 if vt &gt; -4
+        ///pep inc -244 if pep == 9
+        ///zx dec 237 if pmp &lt;= -433
+        ///sdj inc 805 if cpv &gt; 39
+        ///cpv dec -110 if nwg != 4
+        ///n inc -644 if yk == 0
+        ///zx dec -522 if ke &gt; -8
+        ///cpv inc -360 if oj [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DATA8 {
+            get {
+                return ResourceManager.GetString("DATA8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to --- Advent of Code 2017
         ///	http://adventofcode.com/2017
         ///	author: @mrzepisko
