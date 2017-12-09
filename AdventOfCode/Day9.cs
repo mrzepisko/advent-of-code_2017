@@ -12,17 +12,19 @@ namespace AdventOfCode {
 
         void Run() {
             int x = Process(TestData.DATA9);
-            Console.WriteLine(x);
+            Console.WriteLine(string.Format("Groups score: {0}", x));
         }
 
         int Process(string input) {
             string unignored = Regex.Replace(input, "!.", "");
-            string cleaned = CleanNestedGarbage(unignored);
-
+            int garbage;
+            string cleaned = CleanNestedGarbage(unignored, out garbage);
+            Console.WriteLine(string.Format("Cleared garbage: {0}", garbage));
             return CalculateScore(cleaned);
         }
 
-        string CleanNestedGarbage(string input) {
+        string CleanNestedGarbage(string input, out int removedGarbage) {
+            removedGarbage = 0;
             StringBuilder cleand = new StringBuilder();
             int nestCounter = 0;
             for (int i = 0; i < input.Length; i++) {
@@ -30,6 +32,8 @@ namespace AdventOfCode {
                     nestCounter++;
                 } else if (input[i] == '>') {
                     nestCounter--;
+                } else if (nestCounter > 0) {
+                    removedGarbage++;
                 }
 
                 if (nestCounter == 0 && (input[i] != ',' && input[i] != '>')) {
