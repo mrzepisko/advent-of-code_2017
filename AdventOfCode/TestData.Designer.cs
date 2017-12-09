@@ -199,6 +199,15 @@ namespace AdventOfCode {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {{{{{&lt;!!!&gt;},&lt;!e!!!&apos;ue!o!!!&gt;&quot;oo&lt;u!}&lt;&lt;{&gt;},{{{}},{&lt;!&gt;},&lt;&apos;&gt;,{&lt;!!&quot;!!!&gt;&quot;u!!!&gt;!!!&gt;,&lt;&quot;!&gt;,&lt;!&gt;},&lt;}!!}!!!&gt;{&gt;}},{{&lt;&quot;!&gt;}}!&apos;!!u!!!!e!!!&gt;&gt;}}}},{{{&lt;!&gt;&gt;}},{{{&lt;{{!!,&gt;},{&lt;u!!e&apos;!&gt;},&lt;&gt;}}},{&lt;,o!!!&quot;&quot;a!&gt;},&lt;!&gt;},&lt;&lt;}&gt;,{&lt;!!!!,,!&gt;,&lt;!&gt;},&lt;&quot;!!!&gt;u&gt;}}},{{{&lt;}{!&lt;{i!&gt;&gt;}},{{}},{{},&lt;!&gt;,&lt;!&gt;,&lt;!&gt;!!,&lt;!!!!{}!!i&gt;}}},{{},{{{}}},{{&lt;ae{&gt;,{}}},{{&lt;!!!!&quot;&gt;,&lt;{&apos;}!!},&lt;!&gt;a,!&gt;!!!&gt;{!!e&gt;},{{&lt;!ao!!i!&apos;!&gt;,&lt;!!o&gt;,&lt;&apos;e}!!!&gt;!!!&gt;e&apos;!!u{&gt;},&lt;&quot;,&apos;i!!!&gt;{&gt;},{&lt;uai,!!{!&gt;},&lt;uu!!e&gt;}}},{{{{{&lt;!!,a!&gt;&gt;}}}},{},{{{{{{},{{&lt;au&lt;,!!iuu!!!!!&gt;,&lt;&gt;}}},{&lt;i!&gt;,&lt;!&gt;},&lt;!!&apos;iu{!!o&quot;{i,i}!{{&gt;}},{},{{&lt;a!&gt;a&quot;!! [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DATA9 {
+            get {
+                return ResourceManager.GetString("DATA9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to --- Advent of Code 2017
         ///	http://adventofcode.com/2017
         ///	author: @mrzepisko
