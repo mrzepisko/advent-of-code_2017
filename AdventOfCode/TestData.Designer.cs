@@ -70,6 +70,15 @@ namespace AdventOfCode {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 70,66,255,2,48,0,54,48,80,141,244,254,160,108,1,41.
+        /// </summary>
+        internal static string DATA10 {
+            get {
+                return ResourceManager.GetString("DATA10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 798	1976	1866	1862	559	1797	1129	747	85	1108	104	2000	248	131	87	95
         ///201	419	336	65	208	57	74	433	68	360	390	412	355	209	330	135
         ///967	84	492	1425	1502	1324	1268	1113	1259	81	310	1360	773	69	68	290
