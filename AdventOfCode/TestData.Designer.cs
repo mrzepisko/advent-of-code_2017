@@ -79,6 +79,15 @@ namespace AdventOfCode {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to sw,nw,ne,n,se,n,se,n,n,nw,ne,se,sw,ne,ne,ne,ne,ne,se,sw,se,se,se,se,n,s,s,s,se,se,se,s,se,s,s,s,s,s,sw,sw,sw,sw,ne,s,s,sw,se,sw,nw,se,sw,sw,sw,ne,sw,s,sw,nw,sw,sw,sw,sw,sw,sw,sw,sw,sw,sw,nw,sw,nw,nw,sw,nw,nw,sw,sw,sw,sw,sw,n,s,nw,ne,nw,nw,nw,sw,ne,nw,nw,nw,n,nw,nw,nw,nw,nw,nw,nw,nw,nw,nw,nw,nw,se,ne,n,nw,se,nw,ne,nw,n,n,n,nw,n,nw,n,nw,n,s,nw,se,sw,n,n,nw,n,nw,nw,n,ne,n,nw,n,se,n,n,nw,n,n,n,n,n,sw,n,sw,n,n,s,n,nw,n,n,n,ne,n,ne,ne,n,n,ne,s,n,n,ne,se,sw,ne,sw,ne,n,n,ne,n,n,n,ne,n,se,ne,se,n,ne,n,ne,ne,ne,ne,se [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DATA11 {
+            get {
+                return ResourceManager.GetString("DATA11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 798	1976	1866	1862	559	1797	1129	747	85	1108	104	2000	248	131	87	95
         ///201	419	336	65	208	57	74	433	68	360	390	412	355	209	330	135
         ///967	84	492	1425	1502	1324	1268	1113	1259	81	310	1360	773	69	68	290
