@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 
 namespace AdventOfCode {
@@ -11,7 +12,7 @@ namespace AdventOfCode {
             App app = new App();
             app.Intro();
 
-            while(app.DaysMenu() > 0) {
+            while (app.DaysMenu() > 0) {
                 Console.Clear();
             }
 
@@ -21,23 +22,17 @@ namespace AdventOfCode {
     public class App {
         IDay[] days;
         public App() {
-            days = new IDay[] {
-                new Day1(),
-                new Day2(),
-                new Day3(),
-                new Day4(),
-                new Day5(),
-                new Day6(),
-                new Day7(),
-                new Day8(),
-                new Day9(),
-                new Day10(),
-                new Day11(),
-                };
+            var type = typeof(IDay);
+            days = (from t in Assembly.GetExecutingAssembly().GetTypes()
+                    where t.GetInterfaces().Contains(typeof(IDay))
+                             && t.GetConstructor(Type.EmptyTypes) != null
+                    select Activator.CreateInstance(t) as IDay).ToArray();
+            Array.Sort(days, (t1, t2) => { return int.Parse(t1.GetType().Name.Replace("Day", "")).CompareTo(int.Parse(t2.GetType().Name.Replace("Day", ""))); });
         }
+
         public void Intro() {
             Console.WriteLine(TestData.INTRO_TEXT);
-            
+
             Console.ReadKey();
         }
         public int DaysMenu() {
@@ -49,7 +44,7 @@ namespace AdventOfCode {
             bool valid = false;
             string input;
             int selection = 0;
-            for (; !valid; ) {
+            for (; !valid;) {
                 input = Console.ReadLine();
                 if ("q".Equals(input.ToLower())) return 0;
                 int idx;
